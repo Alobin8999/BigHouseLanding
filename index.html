@@ -1,0 +1,973 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UFT-8">
+	<title>Большой дом</title>
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad5ecfcc81c16903e3d258635df2525132e7ea9a1740066c4a27dc56a88789662&amp;width=100%&amp;height=762&amp;lang=ru_RU&amp;id=mymap&amp;scroll=false&amp;apikey=<API-ключ>"></script>
+	<script src="js/luxy.js" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sticksy/dist/sticksy.min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<div class="body">
+	<div class="header-div">
+		<div class="header-image">
+			<header>
+				<div class="logo"></div>
+				<nav>
+					<a href="#about" style="text-decoration: none"><div class="navs"><p>О нас</p></div></a>
+					<a href="#contracts" style="text-decoration: none"><div class="navs"><p>Услуги</p></div></a>
+					<a href="#carrier" style="text-decoration: none"><div class="navs"><p>Карьера</p></div></a>
+					<a href="#contacts" style="text-decoration: none"><div class="navs"><p>Контакты</p></div></a>
+					<a href="#mymap" style="text-decoration: none"><div class="navs"><p>Карта</p></div></a>
+				</nav>
+				<div class="header-info">
+					<div class="mail"><p>info@bighouse.ru</p></div>
+					<div class="info-button"><p>Обратная связь</p></div>
+				</div>
+			</header>
+			<div class="header-image-text" data-aos="fade-right">
+				<h1>Большой дом</h1>
+				<p>динамичная многопрофильная проектно-строительная компания,<br>
+				работающая в следующих секторах:</p>
+			</div>
+		</div>
+		<div class="wecan">
+			<div class="wecan-pages"><p>Технический</p><div class="hidden" id="tech"></div></div>
+			<div class="wecan-pages"><p>Жилой</p><div class="hidden" id="live"></div></div>
+			<div class="wecan-pages"><p>Коммерческий</p><div class="hidden" id="com"></div></div>
+			<a href="#app" style="text-decoration: none"><div class="wecan-pages" id="app"><p>Оставить заявку</p></div></a>
+		</div>
+	</div>
+	<div class="phone-div" id="phone">
+		<div class="editable-zones">
+			<div class="zones">
+				<div class="zone" id="sector"><p>Сектор</p></div>
+				<div class="zone" id="name"><p>Имя</p></div>
+				<div class="zone" id="email"><p>Почта</p></div>
+				<div class="zone" id="number"><p>Номер телефона</p></div>
+			</div>
+			<div class="send-button"><p>Отправить заявку</p></div>
+		</div>
+		<div class="phone-image" id="phone-image"></div>
+	</div>
+	<div class="empty-zone"></div>
+	<div class="about-div" id="about">
+		<div class="about-image"></div>
+		<div class="about-text" data-aos="fade-up">
+			<h1>О нас</h1>
+			<p>Большой дом стремится выполнять высококачественные, экономичные и своевременные проекты, которые постоянно превышают стандарты и гарантируют исключительную удовлетворенность клиентов <br>
+			Мы стремимся обеспечить отличное качество и инновационные строительные решения <br>
+			Наш совместный подход является ключом к нашему успеху, и наши проекты демонстрируют навыки и талант нашей команды во всех сферах нашей деятельности</p>
+		</div>
+	</div>
+	<div class="empty-zone"></div>
+	<div class="contracts-div" id="contracts">
+		<div class="contract-moving widget js-sticky-widget">
+			<p data-aos="zoom-in-up" data-aos-anchor-placement="center-center">Мы выполним весь комплекс работ под ключ - <br>
+			от фундамента до внутренней отделки <br>
+			помещений</p>
+		</div>
+	</div>
+	<div class="empty-zone"></div>
+	<div class="carrier-div" id="carrier">
+		<div class="carrier-moving" id="moving"><h1>Карьера</h1></div>
+		<div class="carrier-text" id="block1">
+			<div class="blocks" data-aos="fade-up"><p>Большой дом создает среду, которая поощряет совместный подход в сочетании с профессиональным ростом. У нас работают талантливые и целеустремленные, те, кто может доказать, что они работают по собственной инициативе в прогрессивной и сложной среде, и те, у кого есть необходимые навыки и опыт, чтобы использовать успех нашей процветающей компании</p></div>
+			<div class="blocks" data-aos="fade-up"><p>Мы признаем, что наши сотрудники являются нашим самым большим достоянием, и наша цель — предоставить им наилучшие возможности для роста и развития вместе с компанией, чтобы они могли реализовать свой потенциал. Мы хотим привлечь самых талантливых и увлеченных людей присоединиться к нашему бизнесу</p></div>
+			<div class="blocks" data-aos="fade-up"><p>Большой дом стремится к равной оплате труда и обеспечению полноценной и обогащающей карьеры для наших сотрудников независимо от пола, религии, сексуальной ориентации, инвалидности или любых других защищенных характеристик</p></div>
+		</div>
+	</div>
+	<div class="empty-zone"></div>
+	<div class="contacts-div" id="contacts">
+		<h1>Контакты</h1>
+		<p> info@bighouse.ru, <br>
+			+78121112233, <br>
+			Юридический адрес: Россия, 191186, <br>
+			Санкт-Петербург, ул. Большая Морская, 18</p>
+	</div>
+	<div class="map-div"><div id="mymap"></div></div>
+	<footer>
+		<div class="footer-section">
+			<div class="footer-section-add">
+				<div class="text"><p>Наши контакты:</p></div>
+				<div class="text">
+					<p>Номер телефона: +7-(812)-111-22-33</p>
+					<p>Адрес: Санкт-Петербург, ул. Большая Морская, 18</p>
+					<p>Почта: info@bighouse.ru</p>
+				</div>
+				<div class="text"><p>© 2024 bighouse.ru</p></div>
+			</div>
+			<div class="footer-section-image"><div class="font-logo"></div></div>
+			<div class="footer-section-add">
+				<div class="text"><p><a href="#" style="text-decoration: none; color: white">«Большой дом»</a></a></p></div>
+				<div class="text">
+					<p><a href="#about" style="text-decoration: none; color: white">О нас</a></p>
+					<p><a href="#contracts" style="text-decoration: none; color: white">Услуги</a></p>
+					<p><a href="#carrier" style="text-decoration: none; color: white">Карьера</a></a></p>
+				</div>
+				<div class="text">
+					<p>Обратная связь</p>
+					<p><a href="#app" style="text-decoration: none; color: white">Оставить заявку</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+<style>
+@font-face {
+	font-family: 'Sansation'; 
+	src: url(fonts/Sansation.ttf); 
+}
+@font-face {
+	font-family: 'Fira Sans Extra Condensed'; 
+	src: url(fonts/Fira.ttf); 
+}
+*{
+	border: .0px solid white;
+}
+body, .body{
+	padding:0; margin:0;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	overflow-x: hidden;
+}
+html{
+	scroll-behavior: smooth;
+}
+.body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	height: auto;
+
+	background: #000000;
+}
+
+
+.header-div{
+	width: 1284px;
+	height: 973px;
+	flex: none;
+	flex-grow: 0;
+}
+.header-image{
+	width: auto;
+	height: 800px;
+	left: 0px;
+	top: 0px;
+
+	background: url(images/house4.png) no-repeat center bottom;
+	background-size: cover;
+	border-radius: 0px 0px 30px 30px;
+	object-fit: cover;
+}
+.header-image-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: left;
+	padding: 15px 0 15px 110px;
+	gap: 10px;
+
+	position: relative;
+	width: 950px;
+	height: auto;
+	left: 0;
+	top: 500px;
+
+	background: rgba(21, 21, 21, 0.75);
+	border-radius: 0px 15px 15px 0px;
+}
+.header-image-text h1{
+	width: auto;
+	height: 56px;
+	margin: 0;
+
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 56px;
+
+	display: flex;
+	align-items: center;
+
+	color: #41B043;
+
+	flex: none;
+	flex-grow: 0;
+}
+.header-image-text p{
+	width: auto;
+	height: auto;
+	margin: 0;
+
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	gap: 10px;
+
+	width: auto;
+	height: 63px;
+	left: 0px;
+	top: 0px;
+
+	background: rgba(21, 21, 21, 0.75);
+}
+.logo{
+	background: url(images/logo.png) no-repeat center bottom;
+	background-size: cover;
+	width: 115px;
+	height: 50px;
+	margin-left: 15px;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 10px;
+	gap: 25px;
+
+	width: auto;
+	height: 50px;
+
+
+	flex: none;
+	flex-grow: 0;
+}
+.header-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 10px;
+	gap: 10px;
+
+	width: auto;
+	height: 53px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.navs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	width: 120px;
+	height: 28px;
+
+	background: #207CAF;
+	border-radius: 15px;
+
+	flex: none;
+	flex-grow: 0;
+	transition: .3s;
+}
+.navs:hover, .info-button:hover{
+	transition: .3s;
+	background: #41B043;
+	cursor: pointer;
+}
+.navs p{
+	margin: 0 auto;
+	width: auto;
+	height: 13px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;	
+}
+.info-button{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7.5px 20px;
+	gap: 10px;
+
+	width: auto;
+	height: auto;
+
+	background: #41B043;
+	border-radius: 15px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.info-button p{
+	margin: 0 auto;
+	width: auto;
+	height: 13px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;	
+}
+.mail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7.5px 0;
+
+	width: auto;
+	height: auto;
+
+	flex: none;
+	flex-grow: 0;
+}
+.mail p{
+	margin: 0 auto;
+	width: auto;
+	height: 13px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;	
+}
+.hidden{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 154px;
+	height: 120px;
+	background: url(images/house1.png);
+	background-size: cover;
+	border-radius: 5px;
+}
+.wecan{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	
+	position:relative;
+	width: 957px;
+	height: 184px;
+	left: 109px;
+	bottom: 65px;
+}
+.wecan-pages{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+
+	width: 154px;
+	height: auto;
+	min-height: 14px;
+	padding: 15px 20px;
+
+	background: #207CAF;
+	box-shadow: 0px 0px 3px #000000;
+	border-radius: 15px;
+
+	flex: none;
+	flex-grow: 0;
+	transition: .3s;
+}
+.wecan-pages:hover{
+	background: #41B043;
+	cursor: pointer;
+}
+.wecan-pages:hover #tech{
+	display: flex;
+	background: url(images/house1.png);
+	background-size: cover;
+}
+.wecan-pages:hover #live{
+	display: flex;
+	background: url(images/house2.png);
+	background-size: cover;
+}
+.wecan-pages:hover #com{
+	display: flex;
+	background: url(images/house3.png);
+	background-size: cover;
+}
+.wecan-pages p{
+	width: auto;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+#app{
+	width: 300px;
+	align-items: center;
+	transition: .3s;
+}
+#app p{
+	margin: 0;
+}
+#app:hover{
+	background: #41B043;
+	transition: .3s;
+}
+
+.phone-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 124px;
+	gap: 150px;
+
+	width: 100%;
+	height: auto;
+
+	flex: none;
+	flex-grow: 0;
+	background: url(images/pattern.png) center center;
+	background-size: 10%;
+}
+.phone-image{
+	width: 266.65px;
+	height: 557.7px;
+	background: url(images/phone.png);
+	transform: rotate(15.6deg);
+
+	flex: none;
+	flex-grow: 0;
+}
+.editable-zones{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px;
+	gap: 35px;
+
+	width: 426px;
+	height: 335px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.zones{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px;
+	gap: 10px;
+
+	width: 426px;
+	height: 246px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.send-button{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	gap: 10px;
+
+	width: 273px;
+	height: 24px;
+
+	background: #207CAF;
+	box-shadow: 0px 0px 3px #000000;
+	border-radius: 15px;
+
+	flex: none;
+	flex-grow: 0;
+	transition: .3s;
+}
+.send-button:hover{
+	cursor: pointer;
+	background: #41B043;
+	transition: .3s;
+}
+.send-button p{
+	width: auto;
+	height: 24px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+.zone{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 15px;
+	gap: 10px;
+
+	width: 396px;
+	height: 24px;
+
+	background: #1D1D1D;
+	box-shadow: 0px 0px 3px #000000;
+	border-radius: 15px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.zone p{
+	width: auto;
+	height: 24px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+
+
+.about-div{
+	width: 1284px;
+	height: 577px;
+	flex: none;
+	flex-grow: 0;
+}
+.about-image{
+	width: 890px;
+	height: 577px;
+	left: 0px;
+	top: 0px;
+
+	background: url(images/house1.png);
+	border-radius: 30px;
+}
+.about-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 46px;
+	align-items: left;
+	gap: 10px;
+
+	position: relative;
+	width: 715px;
+	height: auto;
+	left: 470px;
+	bottom: 350px;
+
+	background: rgba(21, 21, 21, 0.95);
+	border-radius: 30px;
+}
+.about-text p{
+	width: 715px;
+	height: auto;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 15px;
+
+	flex: none;
+	flex-grow: 0;
+	margin:0;
+}
+
+.about-text h1{
+	font-family: 'Sansation';
+	font-style: normal;
+	width: 715px;
+	height: auto;
+	margin:0;
+	padding: 15px;
+	color: #41B043;
+}
+.about-luxy{
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+.contracts-div{
+	width: 100%;
+	height: 3500px;
+	flex: none;
+	flex-grow: 0;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	background: url(images/imagesFont.png) center center no-repeat;
+	background-size:cover;
+}
+.contract-moving{
+	width: 100%;
+	height: 762px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,.06), rgba(255,255,255,0));
+	backdrop-filter: blur(1px);
+}
+.moving-elem{
+	width: 100%;
+	height: 300px;
+}
+.contracts-div p{
+	width: 750px;
+	height: 108px;
+	left: 581px;
+	top: 327px;
+
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 36px;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	text-shadow: 0px 0px 4px #000000;
+}
+
+
+.carrier-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 10px;
+
+	width: auto;
+	height: auto;
+
+	flex: none;
+	flex-grow: 0;
+}
+.carrier-div h1{
+	width: 217px;
+	height: 56px;
+	left: 534px;
+	top: 272.14px;
+
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 56px;
+
+	display: flex;
+	align-items: center;
+
+	color: #41B043;
+}
+.carrier-moving{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+
+	width: auto;
+	height: auto;
+
+	flex: none;
+	align-self: stretch;
+	flex-grow: 0;
+}
+.carrier-text{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+	padding: 0px;
+	gap: 20px;
+
+	width: 1400px;
+	height: auto;
+
+	flex: none;
+	align-self: stretch;
+	flex-grow: 0;
+}
+.blocks{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 50px;
+	gap: 20px;
+
+	width: 521px;
+	height: 300px;
+
+	background: rgba(21, 21, 21, 0.95);
+	border-radius: 30px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.carrier-text p{
+	width: 439px;
+	height: 192px;
+
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+
+
+.contacts-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 38px 645px;
+	gap: 28px;
+
+	width: 100%;
+	height: 300px;
+
+	background: #2D2D2D;
+
+	flex: none;
+	flex-grow: 0;
+}
+.contacts-div h1{
+	width: 358px;
+	height: 87px;
+	left: calc(50% - 358px/2);
+	top: 38px;
+
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 54px;
+	text-align: center;
+
+	color: #41B043;
+}
+.contacts-div p{
+	width: 630px;
+	height: 110px;
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	flex: none;
+	flex-grow: 0;
+}
+
+
+.map-div{
+	width: 100%;
+	height: 762px;
+	flex: none;
+	flex-grow: 0;
+}
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px;
+
+	width: 100%;
+	height: 300px;
+
+	background: #2D2D2D;
+}
+.footer-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+
+	width: 1280px;
+	height: 300px;
+
+	flex: none;
+	flex-grow: 0;
+}
+.footer-section-image{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	gap: 52px;
+
+	width: auto;
+	height: auto;
+
+	flex: none;
+	flex-grow: 1;
+}
+.font-logo{
+	background: url(images/fontLogo.png) center center no-repeat;
+	background-size: cover;
+	width: 250px; height: 250px;
+}
+.footer-section-add{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	padding: 30px 0;
+	gap: 50px;
+
+	width: 420px;
+	height: 240px;
+
+	flex: none;
+	align-self: stretch;
+	flex-grow: 1;
+}
+.text p{
+	margin: 2.5px;
+	line-height: 20px;
+	font-family: 'Fira Sans Extra Condensed';
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+}
+.text p:hover{
+	cursor: pointer;
+}
+.empty-zone{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px;
+	gap: 10px;
+
+	width: 100%;
+	height: 50px;
+
+	flex: none;
+	flex-grow: 0;
+}
+</style>
+<script>
+			var stickyEl = Sticksy.initializeAll('.widget.js-sticky-widget', {
+				topSpacing: window.screen.height/6,
+			})
+			stickyEl.onStateChanged = function (state) {
+				if (state === 'fixed') stickyEl.nodeRef.classList.add('widget--sticky')
+				else stickyEl.nodeRef.classList.remove('widget--sticky')
+			}
+</script>
+<script charset="utf-8">
+		luxy.init({
+			wrapper: '#luxy',
+			targets : '.luxy-el',
+			wrapperSpeed:  0.08
+		});
+</script>
+<script>
+  AOS.init();
+</script>
+</html>
